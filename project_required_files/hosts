@@ -2,4 +2,4 @@
 localhost ansible_python_interpreter="/usr/bin/python3.12"
 
 [web]
-107.20.122.123 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa
+18.212.227.122 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa
