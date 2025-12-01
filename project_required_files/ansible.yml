@@ -24,9 +24,9 @@
               var: out
         - name: Deploy application and service together in kubernetes
           command: >
-            kubectl --kubeconfig=/home/ubuntu/kubernetes/admin.conf apply
-            -f /home/ubuntu/Purdue_Project/project_required_files/deployment.yml
-            -f /home/ubuntu/Purdue_Project/project_required_files/service.yml
+            kubectl --kubeconfig=/var/lib/jenkins/admin.conf apply
+            -f /var/lib/jenkins/Purdue_Project/project_required_files/deployment.yml
+            -f /var/lib/jenkins/Purdue_Project/project_required_files/service.yml
           register: out
         - debug:
               var: out
