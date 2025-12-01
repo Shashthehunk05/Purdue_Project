@@ -1,4 +1,4 @@
-- hosts: web
+- hosts: localhost
   become: yes
   tasks:
         - name: Build an image and push it to a private repo
@@ -27,7 +27,7 @@
             kubectl --kubeconfig=/var/lib/jenkins/admin.conf apply
             -f /var/lib/jenkins/Purdue_Project/project_required_files/deployment.yml
             -f /var/lib/jenkins/Purdue_Project/project_required_files/service.yml
-          delegate_to: localhost
+          #delegate_to: localhost
           register: out
         - debug:
               var: out
